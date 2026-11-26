@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Work in Progress</title>
+  <style>
+    :root { --bg: #f6f5f2; --fg: #1a1a1a; --muted: #6b6b6b; --accent: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #121212; --fg: #f0f0f0; --muted: #9a9a9a; --accent: #f0f0f0; }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: var(--bg); color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      padding: 2rem;
+    }
+    main { max-width: 34rem; }
+    .tag {
+      display: inline-block; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--muted); border: 1px solid currentColor; border-radius: 999px;
+      padding: .25rem .75rem; margin-bottom: 1.5rem;
+    }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; font-weight: 600; margin-bottom: 1rem; }
+    p { font-size: 1.1rem; line-height: 1.6; color: var(--muted); margin-bottom: 2rem; }
+    a.btn {
+      display: inline-block; color: var(--bg); background: var(--accent);
+      text-decoration: none; padding: .8rem 1.4rem; border-radius: .5rem; font-weight: 500;
+      transition: opacity .2s;
+    }
+    a.btn:hover { opacity: .8; }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">Work in progress</span>
+    <h1>A new portfolio is on its way.</h1>
+    <p>I'm currently building this site. In the meantime, feel free to have a look at my previous portfolio.</p>
+    <a class="btn" href="https://eadsgn.framer.media/" target="_blank" rel="noopener">View old portfolio →</a>
+  </main>
+</body>
+</html>
